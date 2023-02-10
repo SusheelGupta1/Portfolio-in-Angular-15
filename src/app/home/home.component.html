@@ -1,7 +1,54 @@
-<div class="containt">
+<div class="container mt-5">
     <div class="row">
-        <div class="col-lg-6" *ngFor="let intro of introduction">
-             <h1 class="intro mt-5 me-5"> {{intro.Name}}</h1>      
+
+        <div class=" type col-lg-6" *ngFor="let bio of biodata"><br><br>
+            <div class="title">{{bio.Title}}</div> <br>
+            <div class="typewriter ">
+                <h1 class="slide">{{bio.Name}}</h1>
+            </div> <br>
+            <div class="Name">{{bio.Profile}}</div><br><br>
+            <div class="details">{{bio.Details}}</div><br><br><br>
+
+            <button type="button" class="btn btn-outline-success">Check out My Expercience !</button>
         </div>
     </div>
+</div><br><br>
+
+<hr>
+
+<div class="container mt-4 text-left">
+    <div class="row">
+        <div class="col-lg-6" *ngFor="let about of data">
+            <h1>{{about.About}}</h1>
+            <div class="paragraph">{{about.paragraph}}</div> <br><br>
+            <h1>{{about.language}}</h1>
+            <div class="row">
+                <div class="col-4" *ngFor="let abt of exp">
+                    <div class="row">
+                        <div class="col">
+                            <ul>
+                                <li> {{abt.exp1}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="col-lg-6 mt-5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPBURKqsrx0G1kxP3zaWxOOyDCRMdCssElFQ&usqp=CAU"
+                style="margin-left: 200px;">
+        </div> -->
+
+
+<hr>
+
+<div class="link">
+    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin me-5"></i></a><a
+        href="https://www.youtube.com/@Susheel_Gupta"><i class="fab fa-youtube me-5"></i></a><a
+        href="https://www.instagram.com/"><i class="fab fa-instagram me-5"></i></a><a
+        href="https://twitter.com/i/flow/login"><i class="fab fa-twitter me-5"></i></a><a href="https://github.com/"><i
+            class="fab fa-github me-5"></i></a>
 </div>

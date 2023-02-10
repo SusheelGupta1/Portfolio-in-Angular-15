@@ -1,4 +1,53 @@
-.intro{
-    font-size: 3n
-    0px;
+.link {
+    position: fixed;
+    
+    padding: 23px 40px;
+    left: -150px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-size: 18px;
+    font-weight: 500;
+ 
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .1s ease-in-out;
 }
+.link a{
+    color: whitesmoke;
+}
+.link a:hover{
+
+    color:blueviolet;
+}
+.slide{
+	color:green;
+}
+.Name{
+	font-size: 30px;
+}
+
+  .typewriter {
+	  width: 70.5ch;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  border-right: 2px solid #212121;
+	  animation: cursor 2s step-start infinite, 
+	  text 4s  alternate infinite;
+  }
+  
+  @keyframes cursor {
+	  0%, 100% { 
+	  border-color: whitesmoke#212121; 
+	}
+  }
+  
+  @keyframes text {
+	  0% { 
+	  width: 0; 
+	}
+	  100% { 
+	  width: 22.5ch; 
+	}
+  }
