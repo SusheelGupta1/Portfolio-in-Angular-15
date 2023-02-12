@@ -83,5 +83,22 @@ export class HomeComponent {
       company: 'ievEera pvt ltd.'
     },
   ]
+
+
+ 
+
+  working = [
+   
+    {
+      company: "iEveEra Pvt.Ltd",
+      profile: "Web Devloper",
+      time: "1 Dec 2022 TO Present",
+      longText: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quidem voluptatum placeat
+      aliquam atque molestiae vero nostrum magnam Non incidunt quo asperiores nemo natus soluta
+      modi tenetur dolor aspernatur perferendis.`,
+      website: "https://www.justsearch.live/"
+    }
+  ]
 }
+
 

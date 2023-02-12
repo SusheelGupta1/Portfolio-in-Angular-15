@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="main container mt-5 ">
     <div class="row">
 
         <div class=" type col-lg-6" *ngFor="let bio of biodata"><br><br>
@@ -11,44 +11,148 @@
 
             <button type="button" class="btn btn-outline-success">Check out My Expercience !</button>
         </div>
+        <div class="col-lg-6 ">
+            <div>
+                <img src="\assets\angular.png" width="50%">
+            </div>
+        </div>
     </div>
-</div><br><br>
+    <br><br>
 
-<hr>
+    <hr>
 
-<div class="container mt-4 text-left">
-    <div class="row">
-        <div class="col-lg-6" *ngFor="let about of data">
-            <h1>{{about.About}}</h1>
-            <div class="paragraph">{{about.paragraph}}</div> <br><br>
-            <h1>{{about.language}}</h1>
-            <div class="row">
-                <div class="col-4" *ngFor="let abt of exp">
-                    <div class="row">
-                        <div class="col">
-                            <ul>
-                                <li> {{abt.exp1}}</li>
-                            </ul>
+    <div class=" main2 container mt-4 text-left">
+        <div class="row">
+            <div class="col-lg-8" *ngFor="let about of data">
+                <h1>{{about.About}}</h1>
+                <div class="paragraph">{{about.paragraph}}</div> <br><br>
+                <h1>{{about.language}}</h1>
+                <div class="row">
+                    <div class="col-4" *ngFor="let abt of exp">
+                        <div class="row">
+                            <div class="col">
+                                <ul>
+                                    <li> {{abt.exp1}}</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div><br><br>
+
+
+    <div class="row">
+        <div class="col">
+            <div class="link">
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin me-5"></i></a><a
+                    href="https://www.youtube.com/@Susheel_Gupta"><i class="fab fa-youtube me-5"></i></a><a
+                    href="https://www.instagram.com/"><i class="fab fa-instagram me-5"></i></a><a
+                    href="https://twitter.com/i/flow/login"><i class="fab fa-twitter me-5"></i></a><a
+                    href="https://github.com/"><i class="fab fa-github me-5"></i></a>
+            </div>
+
+            <main>
+                <div class="stamp-border stamp-border--one mb-5">
+                </div>
+                <div class="stamp-border stamp-border--two">
+                </div>
+                <div class="stamp-border stamp-border--three">
+                </div>
+            </main>
+            <hr>
+
+        </div>
     </div>
-</div>
 
-<!-- <div class="col-lg-6 mt-5">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPBURKqsrx0G1kxP3zaWxOOyDCRMdCssElFQ&usqp=CAU"
-                style="margin-left: 200px;">
-        </div> -->
+    <section>
+        <div class="container text-light">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1><span>02.</span>Where I've Worked
+                        <hr>
+                    </h1>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col " *ngFor="let work of working">
+                    <a href="{{work.website}}"> <mat-card class="example-card text-light mt-4">
+                            <mat-card-header class="text-light">
 
+                                <mat-card-title>
+                                    <h1>{{work.company}}<span> @</span>{{work.profile}}</h1>
+                                </mat-card-title>
+                                <mat-card-subtitle class="text-light mt-2">{{work.time}}</mat-card-subtitle>
+                            </mat-card-header>
+                            <mat-card-content class="mt-2">
 
-<hr>
+                                <p>{{work.longText}}</p>
+                                <mat-divider></mat-divider>
+                            </mat-card-content>
+                            <mat-card-actions class="text-light">
+                                <a href="https://www.justsearch.live/"><button mat-button
+                                        class="text-light">LIKE</button></a>
+                            </mat-card-actions>
+                            <mat-card-footer>
+                                <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+                            </mat-card-footer>
+                        </mat-card></a>
+                </div>
+            </div>
 
-<div class="link">
-    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin me-5"></i></a><a
-        href="https://www.youtube.com/@Susheel_Gupta"><i class="fab fa-youtube me-5"></i></a><a
-        href="https://www.instagram.com/"><i class="fab fa-instagram me-5"></i></a><a
-        href="https://twitter.com/i/flow/login"><i class="fab fa-twitter me-5"></i></a><a href="https://github.com/"><i
-            class="fab fa-github me-5"></i></a>
+            <div class="row">
+                <div class="col-lg-12 text-center mt-4">
+                    <a href="https://github.com/"><button mat-stroked-button
+                            class="btn mt-4"><mat-icon>code</mat-icon>CheckOut Project Source Code</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12"><hr>
+                <h1><span>02.</span>Contact Us
+                    <hr>
+                </h1>
+                <div class="container">
+                    <div class="row justify-content-center pt-5 mt-5 pb-5">
+                      <div class="col-md-7">
+                        
+                        <hr class="bg-success">
+                        <p class="pb-0 mb-0">Just get in contact with us. We are happy to answer your questions.</p>
+                        <p class="text-danger small pt-0 mt-0">* All fields are required</p>
+                        <form>
+                          <div class="row form-group">
+                              <label for="name" class="col-form-label col-md-4">Name</label>
+                              <div class="col-md-8">
+                                <input type="text" name="name" id="name" class="form-control" required>
+                              </div>
+                            </div><br>
+                         <div class="row form-group">
+                            <label for="email" class="col-form-label col-md-4">E-mail</label>
+                            <div class="col-md-8">
+                              <input type="email" name="email" id="email" class="form-control" required>
+                            </div>
+                          </div><br>
+                          
+                          <div class="row form-group">
+                            <label for="message" class="col-form-label col-md-4">Message</label>
+                            <div class="col-md-8">
+                              <textarea name="message" id="message" class="form-control" rows="3" required></textarea>
+                            </div>
+                          </div>
+                         
+                          <div class="d-flex justify-content-center pt-3 mt-3">
+                            <button type="submit" class="btn  btn-block btn-send">Send</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+        </div>
+        <span><br><br><br><br></span>
+    </section>
+
+    
 </div>
